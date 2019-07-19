@@ -1,0 +1,77 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "Programming",
+      "tasks": [
+        {
+          "id": 1,
+          "description": "Learn React.js",
+          "done": true
+        },
+        {
+          "id": 2,
+          "description": "Build a TODO app",
+          "done": false
+        },
+        {
+          "id": 3,
+          "description": "Use JSON Server",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Apartment Needs",
+      "tasks": [
+        {
+          "id": 1,
+          "description": "Go grocery shopping",
+          "done": false
+        },
+        {
+          "id": 2,
+          "description": "Find a TV stand",
+          "done": false
+        },
+        {
+          "id": 3,
+          "description": "Do laundry",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Career Development",
+      "tasks": [
+        {
+          "id": 1,
+          "description": "Studying algorithms",
+          "done": false
+        },
+        {
+          "id": 2,
+          "description": "Fix up resume",
+          "done": false
+        },
+        {
+          "id": 3,
+          "description": "Translate resume to Markdown",
+          "done": false
+        },
+        {
+          "id": 4,
+          "description": "Create portfolio site",
+          "done": false
+        },
+        {
+          "id": 5,
+          "description": "Finish projects and add to portfolio site",
+          "done": false
+        }
+      ]
+    }
+  ]
+}
