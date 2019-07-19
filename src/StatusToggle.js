@@ -10,10 +10,10 @@ import { Icon } from 'semantic-ui-react';
  * }
  */
 
-function StatusToggle(props) {
-	const name = props.done ? 'circle' : 'circle outline'
+function StatusToggle({done, toggleTask}) {
+	const name = done ? 'circle' : 'circle outline'
 	return (
-		<Icon name={name} onClick={props.toggleTask}/>
+		<Icon name={name} onClick={toggleTask}/>
 	);
 }
 

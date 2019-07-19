@@ -9,12 +9,12 @@ import { Button, Divider, Header, List } from 'semantic-ui-react';
  * }
  */
 
-function Lists(props) {
+function ListsContainer({lists, selectList}) {
 
 	function displayLists() {
-		return props.lists.map(function(list) {
+		return lists.map(function(list) {
 			return (
-				<List.Item><Button onClick={() => props.selectList(list)}>
+				<List.Item><Button onClick={() => selectList(list)}>
 					{list.name}
 				</Button></List.Item>
 			);
@@ -22,14 +22,14 @@ function Lists(props) {
 	}
 
 	return (
-		<div>
+		<>
 			<Header size='huge'>Lists</Header>
 			<Divider />
 			<List relaxed>
 				{displayLists()}
 			</List>
-		</div>
+		</>
 	);
 }
 
-export default Lists;
+export default ListsContainer;

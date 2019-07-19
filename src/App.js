@@ -3,13 +3,16 @@ import './App.css';
 
 import { Grid } from 'semantic-ui-react';
 
-import Lists from './Lists';
+import ListsContainer from './ListsContainer';
 import TasksContainer from './TasksContainer';
 
 class App extends React.Component {
 
-	state = {
-		lists: []
+	constructor() {
+		super();
+		this.state = {
+			lists: []
+		};
 	}
 
 	componentDidMount() {
@@ -43,12 +46,13 @@ class App extends React.Component {
 		return (
 			<Grid className='container'>
 				<Grid.Column width={4} id='list-grid'>
-					<Lists lists={this.state.lists} 
+					<ListsContainer lists={this.state.lists} 
 								 selectList={this.selectList} />
 				</Grid.Column>
 
 				<Grid.Column width={12} id='task-grid'>
-					<TasksContainer list={this.state.selectedList} updateList={this.updateList}/>
+					<TasksContainer list={this.state.selectedList}
+													updateList={this.updateList}/>
 				</Grid.Column>
 			</Grid>
 		);

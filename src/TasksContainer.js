@@ -44,13 +44,13 @@ function TasksContainer({list, updateList}) {
 	}
 
 	return (
-		<div>
+		<>
 			<Header size='huge'>{list.name}</Header>
 			<Divider />
 			<List divided relaxed>
 				{renderTasks()}
 			</List>
-		</div>
+		</>
 	);
 }
 
